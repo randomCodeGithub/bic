@@ -1,0 +1,61 @@
+.b-hero {
+    position: relative;
+    padding: 84px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.b-hero:before {
+    content: '';
+    background-color: #1e1b1b;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+.b-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.b-hero__title {
+    text-transform: uppercase;
+}
+
+.b-hero__title:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.b-hero p {
+    opacity: 0.8;
+}
+
+.b-hero__text {
+    max-width: 540px;
+    width: 100%;
+}
+
+@media ( max-width: 1099px ) {
+    .b-hero {
+        padding: 48px 0 45px;
+    }   
+
+    .b-hero__text {
+        max-width: 297px;
+    }
+}

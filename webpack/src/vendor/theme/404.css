@@ -1,0 +1,29 @@
+.c-404 {
+  padding-top: 80px;
+  padding-bottom: 228px;
+}
+
+.c-404__title {
+  font-family: "Raleway";
+  margin-bottom: 20px;
+  font-size: 150px;
+  line-height: 176px;
+  color: #fff;
+  text-shadow: -2px -2px 0 #1e1b1b, 2px -2px 0 #1e1b1b, -2px 2px 0 #1e1b1b,
+    2px 2px 0 #1e1b1b, -2px 0px 0 #1e1b1b, 2px 0px 0 #1e1b1b, 0px -2px 0 #1e1b1b,
+    0px 2px 0 #1e1b1b;
+}
+
+.c-404__sub-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.27px;
+    margin-bottom: 9px;
+}
+
+.c-404__message {
+    opacity: 0.8;
+    max-width: 635px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}

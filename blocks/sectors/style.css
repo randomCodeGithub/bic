@@ -1,0 +1,153 @@
+/* Block */
+
+.b-sector .row + section {
+  margin-top: 40px;
+}
+
+.b-sector {
+  padding: 140px 0;
+}
+
+.b-sector__title {
+  margin-bottom: 13px;
+}
+
+.b-sector__text {
+  max-width: 301px;
+  width: 100%;
+  margin-bottom: 42px;
+}
+
+.b-sector__link {
+  font-family: "Raleway";
+  font-weight: 600;
+  letter-spacing: 0.24px;
+}
+
+/* Items */
+
+.sector-item {
+  position: relative;
+  height: 0;
+  padding-bottom: 112.18%;
+  margin-bottom: 23px;
+  cursor: pointer;
+}
+
+.sector-item__content {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 24px;
+  color: #fff;
+  padding: 0 60px 0 32px;
+  width: 100%;
+  z-index: 1;
+}
+
+.sector-item.opened .sector-item__content {
+  height: calc(100% - 47px) !important;
+}
+
+.sector-item__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.sector-item__title {
+  font-family: "Raleway";
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.sector-item.opened .sector-item__title {
+  margin-bottom: 9px;
+}
+
+.sector-item__title .ic {
+  position: absolute;
+  right: -29px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 15px;
+}
+
+.sector-item__title .ic--minus {
+  font-size: 2px;
+}
+
+.sector-item__text {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Background */
+.background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.background.closed {
+  background: linear-gradient(180deg, #1e1b1b00, #1e1b1b);
+}
+
+.background.opened {
+  background: linear-gradient(180deg, #1e1b1b, #a10015);
+}
+
+.sector-item .background.opened,
+.sector-item.opened .background.closed {
+  opacity: 0;
+}
+
+.sector-item.opened .background.opened {
+  opacity: 0.9;
+}
+
+.sector-item:not(.opened) .background.closed {
+  opacity: 0.8;
+}
+@media ( max-width: 1099px ) {
+  .b-sector {
+    padding: 70px 0;
+  }
+
+  .b-sector .row + section {
+    margin-top: 24px;
+  }
+  
+  .b-sector .col-lg-3:not(:last-child) .sector-item {
+    margin-bottom: 15px;
+  }
+  
+  .b-sector .col-lg-3:first-child {
+    margin-bottom: 28px;
+  }
+
+  .sector-item {
+    padding-bottom: 86.9%;
+  }
+
+  .sector-item.opened .sector-item__title {
+    margin-bottom: 11px;
+  }
+
+  .b-sector__text {
+    margin-bottom: 20px;
+  }
+  
+}

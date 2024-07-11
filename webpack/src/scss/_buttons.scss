@@ -1,0 +1,37 @@
+/* General */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 31px;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1 !important;
+    white-space: nowrap;
+    text-decoration: none !important;
+    background: transparent;
+    transition: all .3s;
+    cursor: pointer;
+    border: 2px solid var(--color-default);
+    text-transform: uppercase;
+}
+.btn[disabled] { cursor: not-allowed; }
+
+.btn:hover {
+    color: #fff;
+    background-color: #E3001D;
+    border-color: #E3001D;
+}
+
+/* Styles */
+.btn--primary {
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.btn--secondary {
+    color: #fff;
+    background: var(--color-secondary);
+}

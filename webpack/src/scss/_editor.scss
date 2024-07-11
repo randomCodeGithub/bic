@@ -1,0 +1,119 @@
+/* General */
+.editor > p:last-child,
+.editor > ul:last-child,
+.editor > ol:last-child { margin-bottom: 0 !important; }
+
+.editor > p strong {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--color-default);
+}
+
+.editor > p { margin-bottom: 16px; }
+
+.editor > p a {
+    font-weight: 600;
+}
+
+/* Links */
+.editor > * > a,
+.edutir > ul a,
+.editor > ol a { color: var(--color-primary); }
+
+
+
+/* Lists */
+.editor > ul,
+.editor > ol { margin-bottom: 21px; }
+
+.editor > ul { list-style: none; }
+
+.editor > ul li {
+    position: relative;
+    display: block;
+    padding-left: 14px;
+}
+
+.editor > ol {
+    counter-reset: item;
+    list-style: none;
+}
+  
+
+.editor > ol li {
+    position: relative;
+    counter-increment: item;
+}
+
+.editor > ul > li:last-child,
+.editor > ol > li:last-child { margin-bottom: 0; }
+
+.editor > ul li:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    content: '';
+}
+
+.editor > ol li:before {
+    width: 30px;
+    color: var(--color-primary);
+    content: counter(item) ". ";
+    font-weight: 700;
+}
+
+/* Tables */
+.wp-block-table table { width: 100%; }
+
+.wp-block-table table,
+.wp-block-table th,
+.wp-block-table td { border: 1px solid var(--color-dark); }
+
+.wp-block-table th,
+.wp-block-table td { padding: 8px 12px; }
+.wp-block-table th { border-bottom-width: 3px; }
+
+@media ( min-width: 1100px ) {
+    // Lists
+
+    .editor > ul li,
+    .editor > ol li { margin-bottom: 4px; }
+
+    .editor > ol li { margin-bottom: 18px; }
+    .editor > ul li { margin-bottom: 14px; }
+
+    .editor > ul:not(:first-child),
+    .editor > ol:not(:first-child) { margin-top: 11px; }
+}
+
+@media ( max-width: 1099.98px ) {
+
+    .editor > p {
+        margin-bottom: 8px;
+    }
+
+    // Lists
+    .editor > ul, .editor > ol {
+        margin-top: 12px;
+    }
+
+    .editor > ul li,
+    .editor > ol li { margin-bottom: 4px; }
+
+    .editor > ul li {
+        padding-left: 14px;
+    }
+
+    .editor > ol {
+        margin-bottom: 20px;
+    }
+
+    .editor > ul {
+        margin-bottom: 12px;
+    }
+}

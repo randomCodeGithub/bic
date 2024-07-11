@@ -1,0 +1,171 @@
+/* Block */
+.b-form__text {
+  border-left: 4px solid #1e1b1b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  padding-left: 15px;
+  margin-bottom: 48px;
+}
+
+.pdg-form {
+  padding: 43px 51px 47px;
+  border: 1px solid #1e1b1b;
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-fields .label {
+  font-family: "Raleway";
+  font-weight: 700;
+  letter-spacing: 0.24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input,
+.input span,
+.input__field {
+  display: block;
+  width: 100%;
+}
+
+.input {
+  padding: 0 12px;
+  margin-bottom: 19px;
+}
+
+.input__field {
+  background-color: transparent;
+  border: none;
+  padding: 16px;
+  border-bottom: 2px solid #1e1b1b;
+  color: #1e1b1b;
+}
+
+textarea.input__field {
+  height: 147px;
+}
+
+.form-footer__submit {
+  padding: 0 12px;
+  margin-top: 5px;
+}
+
+/* Links */
+.b-form__links a {
+  font-size: 18px;
+  padding: 16px 30px;
+}
+
+.b-form__links .ic {
+  margin-right: 12px;
+}
+
+.btn-whatsapp {
+  color: #20b038;
+  border-color: #20b038;
+  border-width: 2px;
+}
+
+@media (min-width: 1100px) {
+  .b-form .col-lg-6:last-child {
+    padding-top: 69px;
+    padding-bottom: 64px;
+    padding-left: 124px;
+  }
+
+  .b-form .col-lg-6:last-child:before,
+  .b-form .col-lg-6:last-child:after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 12px);
+    height: 1px;
+    background-color: var(--color-default);
+    right: 0;
+  }
+
+  .b-form .col-lg-6:last-child:before {
+    top: 0;
+  }
+
+  .b-form .col-lg-6:last-child:after {
+    bottom: 0;
+  }
+
+  .b-form__links a:not(:last-child) {
+    margin-right: 13px;
+  }
+
+  .input-50 {
+    width: 50%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1099.98px) {
+  .b-form {
+    position: relative;
+    padding: 48px 0 0;
+  }
+
+  .b-form:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: block;
+    height: 1px;
+    background-color: var(--color-default);
+  }
+
+  .b-form__text {
+    margin-bottom: 21px;
+  }
+
+  .b-form__text br {
+    display: none;
+  }
+
+  .b-form__links {
+    margin-bottom: 32px;
+  }
+
+  .b-form__links a {
+    width: 100%;
+  }
+
+  .b-form__links a:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .pdg-form {
+    padding: 27px 20px 31px;
+  }
+
+  .form-fields .label {
+    margin-bottom: 0px;
+  }
+
+  .input__field {
+    padding: 10px 16px;
+  }
+
+  textarea.input__field {
+    height: 92px;
+  }
+
+  .input {
+    margin-bottom: 21px;
+  }
+
+  .form-footer__submit {
+    margin-top: 4px;
+  }
+
+}

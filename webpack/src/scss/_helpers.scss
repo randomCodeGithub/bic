@@ -1,0 +1,134 @@
+/* Positioning */
+.relative { position: relative; }
+
+.abs-c {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+}
+
+.abs-c-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.abs-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Display */
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex--col { flex-direction: column; }
+
+@media ( min-width: 768px ) {
+    .flex-md {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media ( min-width: 1100px ) {
+    .flex-lg {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* Backgrounds */
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+}
+
+.bgc-primary { background-color: var(--color-primary); }
+.bgc-secondary { background-color: var(--color-secondary); }
+.bgc-white { background-color: #fff; }
+.bgc-light { background-color: var(--color-light); }
+.bgc-dark { background-color: var(--color-dark); }
+
+
+
+/* Background picture */
+.background-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background-picture,
+.background-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Aspect ratio */
+.ar {
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+
+
+/* Misc. */
+.on-top {
+    position: relative;
+    z-index: 1;
+}
+
+.w-100 { width: 100%; }
+
+.img-cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Text */
+.ta-center,
+.text-center,
+.aligncenter,
+.has-text-align-center { text-align: center; }
+.ta-left { text-align: left; }
+.ta-right { text-align: right; }
+
+.fw-regular { font-weight: 400; }
+.fw-medium { font-weight: 500; }
+.fw-semibold { font-weight: 600; }
+.fw-bold { font-weight: 700; }
+
+.tt-upp { text-transform: uppercase; }
+.tt-cap { text-transform: capitalize; }
+
+.c-white { color: #fff; }
+.c-default { color: var(--color-default); }
+.c-primary { color: var(--color-primary); }
+.c-secondary { color: var(--color-secondary); }
+.c-light { color: var(--color-light); }
+.c-medium { color: var(--color-medium); }
+.c-dark { color: var(--color-dark); }

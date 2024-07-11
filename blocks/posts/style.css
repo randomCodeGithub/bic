@@ -1,0 +1,115 @@
+/* Block */
+.b-posts {
+  padding: 140px 0;
+}
+
+.b-posts .item-grid {
+  margin-bottom: 24px;
+}
+
+.b-posts__title {
+  margin-bottom: 32px;
+}
+
+.b-posts .btn {
+  margin-top: 21px;
+}
+
+/* Items */
+.post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.post__image-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 67.5%;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.post__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post__title {
+  font-family: "Raleway";
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+  margin-bottom: 11px;
+}
+
+.post__excerpt {
+  margin-bottom: 19px;
+}
+
+.post span {
+  font-family: "Raleway";
+  letter-spacing: 0.24px;
+  font-weight: 600;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.post span .ic {
+  margin-left: 16px;
+  font-size: 13px;
+  transition: margin 0.3s ease-in-out;
+}
+
+/* Hover */
+
+.post:hover .post__image {
+  transform: scale(1.1);
+}
+
+.post:hover span {
+  color: #a10015;
+}
+
+.post:hover .ic {
+    margin-left: 20px;
+}
+
+@media (max-width: 1099.98px) {
+  .b-posts {
+    padding: 70px 0;
+  }
+
+  .b-posts__title {
+    margin-bottom: 24px;
+  }
+
+  /* Items */
+
+  .b-posts .item-grid {
+    margin-bottom: 20px;
+  }
+
+  .post__image-wrapper {
+    margin-bottom: 16px;
+  }
+
+  .post__excerpt {
+    padding-right: 10px;
+    margin-bottom: 17px;
+  }
+
+  .b-posts .btn {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+}

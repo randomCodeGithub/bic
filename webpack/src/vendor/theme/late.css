@@ -1,0 +1,334 @@
+/* Loading */
+.loading { position: relative; }
+.btn.loading { color: transparent; }
+.loading > * { opacity: 0; }
+
+.loading:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    margin-top: -12px;
+    padding: 0;
+    background: transparent;
+    border: 4px solid var(--color-light);
+    border-bottom-color: var(--color-primary);
+    border-radius: 50%;
+    opacity: 1;
+    animation: rotate 1s linear infinite;
+    content: '';
+}
+
+.service.loading > *,
+.reference.loading > * { 
+    opacity: 0.5; 
+}
+
+/* Service Popup Content */
+
+.c-service__title {
+    margin-bottom: 21px;
+}
+
+.c-service__sub-title {
+    font-family: 'Raleway';
+    font-weight: 600;
+    letter-spacing: 0.32px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.c-service__text,
+.c-reference__text  {
+    max-width: 540px;
+    width: 100%;
+}
+
+.c-service__text.editor p,
+.c-reference__text.editor p {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.9;
+    margin-bottom: 9px;
+}
+
+/* Reference Popup Content */
+
+.c-reference__title {
+    margin-bottom: 22px;
+}
+
+.c-reference__client,
+.c-reference__country {
+    font-weight: 600;
+    letter-spacing: 0.27px;
+}
+
+.c-reference__country {
+    margin-bottom: 10px;
+}
+
+.c-reference__client {
+    margin-bottom: 27px;
+}
+
+/* Service/Reference popup Gallery */
+
+.fancybox-container .c-service,
+.fancybox-container .c-reference {
+    width: 100%;
+    padding: 50px 0 10px;
+    background: transparent;
+}
+
+.c-service-nav,
+.c-reference-nav {
+    position: relative;
+}
+
+.c-service-slider,
+.c-reference-slider {
+    margin-bottom: 16px;
+}
+
+.c-service-slider__slide,
+.c-reference-slider__slide {
+    width: 100%;
+    height: 0;
+    padding-bottom: 68%;
+}
+
+.c-service-nav__slide,
+.c-reference-nav__slide {
+    width: 75px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.c-service-nav__slide.flex-active-slide,
+.c-reference-nav__slide.flex-active-slide {
+    box-shadow: inset 0 0 0 2px #A10015;
+}
+
+.c-service .flex-direction-nav a,
+.c-reference .flex-direction-nav a {
+    top: 0;
+    z-index: 1;
+    width: 88px;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.c-service .flex-direction-nav a .ic,
+.c-reference .flex-direction-nav a .ic {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.c-service .flex-direction-nav a:before,
+.c-reference .flex-direction-nav a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+.c-service .flex-direction-nav .flex-prev:before,
+.c-reference .flex-direction-nav .flex-prev:before {
+    background: linear-gradient(-90deg, #1E1B1B00 , #1E1B1B);
+}
+
+.c-service .flex-direction-nav .flex-next:before,
+.c-reference .flex-direction-nav .flex-next:before
+{
+    background: linear-gradient(90deg, #1E1B1B00 , #1E1B1B);
+}
+
+.c-service .flex-direction-nav .flex-prev,
+.c-reference .flex-direction-nav .flex-prev {
+    left: 0;
+}
+
+.c-service .flex-direction-nav .flex-next,
+.c-reference .flex-direction-nav .flex-next {
+    right: 0;
+}
+
+.c-service .flex-direction-nav .flex-prev .ic,
+.c-reference .flex-direction-nav .flex-prev .ic {
+    transform: scaleX(-1) translateY(-50%);
+    left: 12px;
+}
+
+.c-service .flex-direction-nav .flex-next .ic,
+.c-reference .flex-direction-nav .flex-next .ic {
+    right: 12px;
+}
+
+.fancybox-container .fancybox-toolbar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fancybox-container .fancybox-button--zoom {
+    display: none !important;
+}
+
+.fancybox-container .fancybox-button--close {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    cursor: pointer;
+    top: 22px;
+    right: 23px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hover */
+.nav-main>ul a:hover,
+.nav-main>ul a:active,
+.nav-main>ul>.active>a {
+    font-weight: 800;
+}
+
+.footer-navigation li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media ( max-width: 1099px ) {
+    .nav-main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 71.99px 24px 32px;
+        text-align: center;
+        background: #fff;
+        border-bottom: 1px solid var(--color-default);
+      }
+
+    .nav-open .nav-main { 
+        display: block;
+        overflow-y: auto;
+        max-height: 100%;
+    }
+
+    .nav-main ul {
+        display: block;
+        padding-top: 32px;
+    }
+
+    .nav-open .nav-main::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 71.99px;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-open .nav-main::after {
+        content: "";
+        position: fixed;
+        top: 72px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        display: block;
+        height: 1px;
+        background-color: var(--color-default);
+    }
+
+    .site-header .nav-main li:not(:last-child) {
+        margin-bottom: 21px;
+    }
+
+    .header-btn {
+        margin-top: 48px;
+        width: 100%;
+    }
+
+    /* Popups */
+
+    .fancybox-container .c-service, .fancybox-container .c-reference {
+        padding-top: 64px;
+        padding-bottom: 70px;
+    }
+
+    .fancybox-container .fancybox-button--close {
+        top: 15px;
+        right: 14px;
+    }
+
+    .c-service__inner > .row,
+    .c-reference__inner > .row {
+        flex-direction: column-reverse;  
+    }
+
+    .c-service__inner .col-lg-6,
+    .c-reference__inner .col-lg-6 {
+        padding-left: 6px;
+        padding-right: 6px; 
+    }
+
+    .c-service-slider__slide, .c-reference-slider__slide {
+        padding-bottom: 67%;
+    }
+
+    .c-service-nav__slide, .c-reference-nav__slide {
+        height: 49px;
+    }
+
+    .c-service .flex-direction-nav .flex-next .ic, .c-reference .flex-direction-nav .flex-next .ic {
+        right: 8px;
+    }
+
+    .c-service .flex-direction-nav .flex-prev .ic, .c-reference .flex-direction-nav .flex-prev .ic {
+        left: 8px;
+    }
+
+    .c-service__info,
+    .c-reference__info {
+        margin-top: 32px;
+    }
+
+    .c-service__title,
+    .c-reference__title {
+        margin-bottom: 24px;
+    }
+
+
+    .c-service__sub-title {
+        margin-bottom: 14px;
+    } 
+
+    .c-reference__country {
+        margin-bottom: 8px;
+    }
+
+    .c-reference__client {
+        margin-bottom: 21px;
+    }
+
+}

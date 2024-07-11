@@ -1,0 +1,120 @@
+.b-references {
+  padding: 140px 0;
+}
+
+.b-references__title {
+  margin-bottom: 32px;
+}
+
+.b-references .btn {
+  margin-top: 31px;
+}
+
+/* Items */
+.reference {
+  margin-bottom: 29px;
+  cursor: pointer;
+}
+
+.reference__title {
+  position: relative;
+  font-family: "Raleway";
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #1e1b1b;
+  margin-bottom: 8.5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.reference__title .ic {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 15px;
+}
+
+.reference__image-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 67.5%;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.reference__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.reference__info {
+  display: flex;
+  color: #5e5555;
+  font-family: "Raleway";
+  font-weight: 600;
+  letter-spacing: 0.24px;
+}
+
+.reference__info .client {
+  margin-left: auto;
+}
+
+/* Hover */
+
+.reference:hover .reference__image {
+  transform: scale(1.1);
+}
+
+.reference:hover .reference__title {
+  color: #a10015;
+}
+
+@media (max-width: 1099.98px) {
+    .b-references {
+      padding: 70px 0;
+    }
+
+    .b-references__title {
+      margin-bottom: 22px;
+    }
+
+    .b-references .item-grid:not(:last-child) {
+      margin-bottom: 19px;
+    }
+
+    .reference {
+      margin-bottom: 0;
+    }
+
+    .reference__image-wrapper {
+      padding-bottom: 67%;
+      margin-bottom: 14px;
+    }
+
+    .reference__title {
+      font-size: 18px;
+      letter-spacing: 0.27px;
+      padding-bottom: 9px;
+      margin-bottom: 7px;
+    }
+
+    .reference__title .ic {
+      top: 6px;
+      font-size: 13px;
+    }
+
+    .reference__info {
+      font-size: 14px;
+    }
+
+    .b-references .btn {
+      margin-top: 44px;
+      width: 100%;
+    }
+}

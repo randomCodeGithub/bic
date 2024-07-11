@@ -1,0 +1,176 @@
+{
+    "key": "group_665b153d40cb5",
+    "title": "Slider",
+    "fields": [
+        {
+            "key": "field_665b153d23e39",
+            "label": "Items",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_665b155823e3a",
+            "label": "Items",
+            "name": "items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_665b15d7354d7",
+                    "label": "Content",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0,
+                    "selected": 0,
+                    "parent_repeater": "field_665b155823e3a"
+                },
+                {
+                    "key": "field_665b15c0354d6",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_665b155823e3a"
+                },
+                {
+                    "key": "field_665b15e3354d8",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_665b155823e3a"
+                },
+                {
+                    "key": "field_665b1626354da",
+                    "label": "Gallery",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0,
+                    "selected": 0,
+                    "parent_repeater": "field_665b155823e3a"
+                },
+                {
+                    "key": "field_665b15f3354d9",
+                    "label": "Gallery",
+                    "name": "gallery",
+                    "aria-label": "",
+                    "type": "gallery",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min": "",
+                    "max": 2,
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "insert": "append",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_665b155823e3a"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/slider"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1717246630
+}

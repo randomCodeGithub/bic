@@ -1,0 +1,30 @@
+:root {
+	--color-default:   #1E1B1B;
+	--color-primary:   #A10015;
+	--color-secondary: #E3001D;
+	--color-dark:      #242A30;
+	--color-medium:    #808083;
+	--color-light:     #cdd0d5;
+	--color-inactive:  #9D9FB4;
+	--color-error:     #ff0000;
+	--color-success:   #26A65B;
+
+	--font-primary: "Open-sans";
+
+	--border-radius: 4px;
+
+	--site-width: 1320px;
+	--gutters: 24px;
+}
+
+// Includes ( comment out or uncomment anything you need )
+@import 'layout';
+@import 'helpers';
+@import 'fonts';
+@import 'buttons';
+@import 'typography';
+@import 'editor';
+@import 'header';
+@import 'footer';
+@import 'site_content';
+// @import 'print';
